@@ -1,11 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sistema de Vestibular</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .resultado { margin-bottom: 20px; border: 1px solid #000; padding: 10px; }
+    </style>
 </head>
 <body>
+    <h1>Cadastro de Vestibulandos</h1>
+    <form id="form">
+        <label>Nome Completo: <input type="text" id="nome" required></label><br>
+        <label>Número de Inscrição: <input type="text" id="inscricao" required></label><br>
+        <label>Ano de Nascimento: <input type="number" id="anoNascimento" required></label><br>
+        <h3>Notas:</h3>
+        <label>Natureza: <input type="number" id="natureza" min="0" max="1000" required></label><br>
+        <label>Humanas: <input type="number" id="humanas" min="0" max="1000" required></label><br>
+        <label>Linguagens: <input type="number" id="linguagens" min="0" max="1000" required></label><br>
+        <label>Matemática: <input type="number" id="matematica" min="0" max="1000" required></label><br>
+        <label>Redação: <input type="number" id="redacao" min="0" max="1000" required></label><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <h2>Resultados</h2>
+    <div id="resultados"></div>
+
     <script src="script.js"></script>
 </body>
 </html>

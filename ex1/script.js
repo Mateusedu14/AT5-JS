@@ -102,7 +102,7 @@ function lerNomesNumerosHoraTrabQuantHorasTrab() {
         prestadores.push(prestador);
 
         
-        continuar = (contador < 2) || (contador < 50 && confirm("Deseja continuar o cadastro?"));
+        continuar = (contador < 5) || (contador < 50 && confirm("Deseja continuar o cadastro?"));
 
     } while (continuar);
 
@@ -128,9 +128,12 @@ function exibirPrestadores(listaprestadores) {
     }
     document.write(mensagem); 
 
+
+
+
+
+}
 let lista = lerNomesNumerosHoraTrabQuantHorasTrab();
 exibirPrestadores(lista);
 
 console.log(lista);
-
-
